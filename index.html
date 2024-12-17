@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="weather-app">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Weather</h2>
+      <ul>
+        <li><a href="#">Cities</a></li>
+        <li><a href="#">Map</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <input type="text" placeholder="Search for cities" class="city" id="city">
+        <button class="bt" id="getWeather"><ion-icon name="search"></ion-icon></button>
+
+      </div>
+
+      <div class="current-weather" id="current-weather">
+        <h1>Madrid</h1>
+        <p>Chance of rain: 0%</p>
+        <h2>31°</h2>
+        <div class="icon"id="getWeather">
+          <img src="sun.png" alt="Sunny" >
+        </div>
+      </div>
+
+      <!-- Today's Forecast -->
+      <div class="todays-forecast">
+        <h3>Today's Forecast</h3>
+        <div class="forecast-row">
+          <div class="forecast-item">
+            <p>6:00 AM</p>
+            <img src="cloudy-day.png" alt="Cloudy">
+            <p>25°</p>
+          </div>
+          <div class="forecast-item">
+            <p>9:00 AM</p>
+            <img src="sun.png" alt="Sunny">
+            <p>28°</p>
+          </div>
+          <!-- Add more forecast items as needed -->
+        </div>
+      </div>
+
+      <!-- Air Conditions -->
+      <div class="airconditions" id="airconditions">
+        <h3>Air Conditions</h3>
+        <p><strong>Real Feel:</strong> 30°</p>
+        <p><strong>Wind:</strong> 0.2 km/h</p>
+        <p><strong>Chance of Rain:</strong> 0%</p>
+        <p><strong>UV Index:</strong> 3</p>
+      </div>
+
+      <!-- 7-Day Forecast -->
+      <div class="weekly-forecast">
+        <h3>7-Day Forecast</h3>
+        <ul>
+          <li>Today: Sunny, 36° / 22°</li>
+          <li>Tue: Sunny, 37° / 21°</li>
+          <li>Wed: Sunny, 37° / 21°</li>
+          <!-- Add more days -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

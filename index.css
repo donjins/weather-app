@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1E213A;
+  color: #E7E7EB;
+  display: flex;
+  height: 100vh;
+}
+
+/* Weather App Container */
+.weather-app {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.city {
+  width: 85%;
+  background-color: #aeaeb0;
+  padding: 10px;
+  text-align: left;
+  border-radius: 12px;
+}
+.bt{
+  padding: 8px;
+  background-color: #aeaeb0;
+  border-radius: 6px;
+
+}
+
+.sidebar h2 {
+  color: #E7E7EB;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #88869D;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #E7E7EB;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header .search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.getWeather{
+padding: 20px;
+}
+
+/* Current Weather */
+.current-weather {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.current-weather h1 {
+  font-size: 2.5em;
+}
+
+.current-weather h2 {
+  font-size: 3em;
+}
+
+.current-weather .icon img {
+  width: 100px;
+  left: 10px;
+}
+
+/* Today's Forecast */
+.todays-forecast {
+  background-color: #232539;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.forecast-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-item {
+  text-align: center;
+}
+
+.forecast-item img {
+  width: 50px;
+}
+
+/* Air Conditions */
+#airconditions {
+  background-color: #232539;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.air-conditions p {
+  margin: 10px 0;
+}
+
+/* Weekly Forecast */
+.weekly-forecast {
+  background-color: #232539;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.weekly-forecast ul {
+  list-style: none;
+}
+
+.weekly-forecast ul li {
+  margin: 10px 0;
+}
